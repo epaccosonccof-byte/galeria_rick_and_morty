@@ -1,0 +1,108 @@
+body {
+    background: #171923;
+    color: #f7fafc;
+    min-height: 100vh;
+}
+
+header {
+    background: #202735;
+    border-bottom: 3px solid #62d6a5;
+}
+
+header h1 {
+    color: #62d6a5;
+}
+
+#contenedorPersonajes .col {
+    display: flex;
+}
+
+.tarjeta-personaje {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #252d3a;
+    border: 1px solid #394455;
+    border-radius: 12px;
+    color: #f7fafc;
+}
+
+.tarjeta-personaje img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.tarjeta-contenido {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 15px;
+}
+
+.tarjeta-contenido h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.estado {
+    font-size: .9rem;
+    margin-bottom: 10px;
+}
+
+.punto {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.alive { background: #35d07f; }
+.dead { background: #f05252; }
+.unknown { background: #a0aec0; }
+
+.ubicacion {
+    color: #cbd5e0;
+    font-size: .88rem;
+    margin-bottom: 15px;
+}
+
+.tarjeta-contenido .btn {
+    margin-top: auto;
+}
+
+.modal-content {
+    background: #252d3a;
+    color: #f7fafc;
+}
+
+.detalle-imagen {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.detalle-fila {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 8px 0;
+    border-bottom: 1px solid #414b5b;
+}
+
+.detalle-fila strong {
+    color: #62d6a5;
+}
+
+footer {
+    color: #a0aec0;
+}
+
+@media (max-width: 575.98px) {
+    main.container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
